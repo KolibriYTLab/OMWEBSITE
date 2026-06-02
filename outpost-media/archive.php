@@ -22,7 +22,7 @@ get_header();
 		</div>
 		<?php the_posts_pagination(); ?>
 	<?php else : ?>
-		<?php get_template_part( 'template-parts/content-none' ); ?>
+		<p><?php esc_html_e( 'No stories were found for this archive.', 'outpost-media' ); ?></p>
 	<?php endif; ?>
 </main>
 <?php

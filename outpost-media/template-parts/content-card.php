@@ -4,10 +4,8 @@
  *
  * @package OutpostMedia
  */
-$variant = $args['variant'] ?? '';
-$classes = trim( 'post-card ' . ( $variant ? 'post-card--' . sanitize_html_class( $variant ) : '' ) );
 ?>
-<article <?php post_class( $classes ); ?>>
+<article <?php post_class( 'post-card' ); ?>>
 	<a class="post-card__image" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr( get_the_title() ); ?>">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
@@ -17,7 +15,7 @@ $classes = trim( 'post-card ' . ( $variant ? 'post-card--' . sanitize_html_class
 	</a>
 	<div class="post-card__body">
 		<?php get_template_part( 'template-parts/post-meta' ); ?>
-		<h3 class="post-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<h2 class="post-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<div class="post-card__excerpt"><?php the_excerpt(); ?></div>
 	</div>
 </article>

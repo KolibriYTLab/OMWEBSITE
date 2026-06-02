@@ -16,15 +16,7 @@ get_header();
 				<h1 class="article-title"><?php the_title(); ?></h1>
 			</header>
 			<div class="article-content">
-				<?php
-				the_content();
-				wp_link_pages(
-					array(
-						'before' => '<nav class="page-links" aria-label="' . esc_attr__( 'Page sections', 'outpost-media' ) . '">',
-						'after'  => '</nav>',
-					)
-				);
-				?>
+				<?php the_content(); ?>
 			</div>
 		</article>
 		<?php
