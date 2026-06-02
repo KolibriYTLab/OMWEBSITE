@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="outpost-knot-title">
+  <title id="outpost-knot-title">Outpost Media endless knot mark</title>
+  <g fill="#681A24" transform="translate(60 60) rotate(45) translate(-60 -60)">
+    <path d="M49 5h22v22H49zM49 93h22v22H49zM5 49h22v22H5zM93 49h22v22H93z"/>
+    <path d="M41 19h16v27H41zM64 19h16v27H64zM41 74h16v27H41zM64 74h16v27H64z"/>
+    <path d="M19 41h27v16H19zM74 41h27v16H74zM19 64h27v16H19zM74 64h27v16H74z"/>
+    <path d="M48 48h24v24H48z"/>
+  </g>
+</svg>
